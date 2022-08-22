@@ -1,23 +1,11 @@
-'''
-Exercício 2
-
-Escreva um programa que tenha como entrada um arquivo
-fonte de um programa escrito na linguagem C, e tem como
-saída um arquivo fonte modificado, com todas as palavras
-reservadas no arquivo de entrada em MAIÚSCULO.
-Abaixo a lista de palavras reservadas da linguagem C.
-
-http://linguagemc.com.br/lista-de-palavras-reservadas-em-c/
-'''
-
 import re # expressões regulares
 
 # Palavras reservadas da linguagem C
 reservedWords = ["asm","auto","break","case","char","const","continue","default","do","double","else","enum","extern","float","for","goto","if","int","long","register","return","short","signed","sizeof","static","struct","switch","typedef","union","unsigned","void","volatile","while",]
 
 # Caminho da pasta onde está o arquivo .c
-filePath = './aula01/c/'
-fileCName = 'vetor'
+filePath = './ACs/AC1/'
+fileCName = 'ex03'
 fileExtension = '.c'
 
 with open(filePath+fileCName+fileExtension, 'r') as f:
